@@ -83,9 +83,9 @@ const MoviePicker: React.FC = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-purple-800 mb-4 flex items-center justify-center gap-3">
             <FilmIcon className="w-10 h-10" />
-            Movie Night Picker
+            Letterboxd Watchlist Picker
           </h1>
-          <p className="text-gray-600">Let&apos;s find your next movie adventure!</p>
+          <p className="text-gray-600">Upload your watchlist, and we\'ll pick a random movie for you!</p>
         </div>
 
         {/* File Upload */}
