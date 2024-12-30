@@ -39,7 +39,7 @@ const MoviePicker: React.FC = () => {
           setLoading(false);
         }
       },
-      error: (error: Error) => {
+      error: () => {
         setError('Error parsing CSV file. Please ensure it\'s in the correct format.');
         setLoading(false);
       }
