@@ -85,7 +85,7 @@ const MoviePicker: React.FC = () => {
             <FilmIcon className="w-10 h-10" />
             Letterboxd Watchlist Picker
           </h1>
-          <p className="text-gray-600">Upload your watchlist, and we\'ll pick a random movie for you!</p>
+          <p className="text-gray-600">Upload your watchlist, and we&apos;ll pick a random movie for you!</p>
         </div>
 
         {/* File Upload */}
