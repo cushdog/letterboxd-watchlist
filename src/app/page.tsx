@@ -21,7 +21,7 @@ const MoviePicker: React.FC = () => {
 
     setLoading(true);
     setError('');
-    
+
     Papa.parse<string[]>(file, {
       complete: (results) => {
         if (results.data && results.data.length > 0) {
@@ -56,7 +56,7 @@ const MoviePicker: React.FC = () => {
     const randomIndex = Math.floor(Math.random() * movies.length);
     const movie = movies[randomIndex];
     setSelectedMovie(movie);
-    
+
     try {
       const details = await fetchMovieDetails(movie.title, movie.year);
       setMovieDetails(details);
@@ -105,6 +105,20 @@ const MoviePicker: React.FC = () => {
               onChange={handleFileUpload}
             />
           </label>
+        </div>
+
+        {/* Export Button */}
+        <div className="mt-8 pb-4">
+          <a
+            href="https://letterboxd.com/account_name/watchlist/export/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-purple-600 text-white py-4 rounded-xl font-bold text-lg shadow-lg
+                       hover:bg-purple-700 transition-all text-center inline-block
+                       focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+          >
+            Download Your Watchlist
+          </a>
         </div>
 
         {/* Error Message */}
