@@ -1,7 +1,7 @@
 import { MovieDetails } from "@/types/types";
 
 const OMDB_API_KEY = process.env.NEXT_PUBLIC_OMDB_API_KEY;
-const OMDB_BASE_URL = 'http://www.omdbapi.com';
+const OMDB_BASE_URL = 'https://www.omdbapi.com';
 
 export async function fetchMovieDetails(title: string, year: string): Promise<MovieDetails | null> {
   try {
